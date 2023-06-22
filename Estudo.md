@@ -1,6 +1,6 @@
 # PHP
 
-## PDO
+## PDO PHP DATA OBJECT
 - extensão da linguagem PHP para acesso a banco de dados. Totalmente orientado a objetos ele possui diversos recursos importantes, além de suporte a diversos mecanismos de banco de dados. 
 
 ### CRUD

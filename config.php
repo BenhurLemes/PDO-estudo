@@ -1,6 +1,6 @@
 <?php 
 
-function Conectar(){
+function Conectar() {
 
     #Construção básica
     $local_serve = 'localhost';
@@ -12,9 +12,9 @@ function Conectar(){
     try{
         $pdo = new PDO("mysql:host=$local_serve;dbname=$banco_de_dados", $usuario_serve, $senha_serve); #Conexão PDO
         $pdo->exec("SET CHARACTER SET utf8");
-    } catch (\Throwable $th) { #encontrará o erro no teste.
-        return $th; #retorna o erro
-        die; #encerra o script 
+    } catch (\Exception $E) { #encontrará o erro no teste.
+        var_dump($E->getMessage());
+        die; #encerra o script (não deve continuar sem a instância do PDO)
     }
 
     return $pdo;

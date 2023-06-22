@@ -9,3 +9,5 @@ CREATE TABLE `users` (
   `confirmed` tinyint(1) NOT NULL DEFAULT '0',
   `confirm_code` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Inserir um valor no banco para testar depois.
